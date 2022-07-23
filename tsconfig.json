@@ -4,6 +4,7 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "react",
     "lib": ["es6"],
@@ -12,10 +13,12 @@
     "strict": true,
     "target": "esnext",
     "baseUrl": "./src",
+    "types": ["node"],
     "paths": {
-      "@/*": ["./*"],
+      "@/*": ["./*"]
     }
   },
+  "include": ["src/**/*", ],
   "exclude": [
     "node_modules",
     "babel.config.js",
